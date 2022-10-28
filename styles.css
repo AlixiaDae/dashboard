@@ -19,17 +19,44 @@ body {
     align-self: center;
 }
 
+.bellimg {
+    height: 20px;
+    align-self: center;
+}
+
 .header {
     background-color: white;
     grid-column: 2 / 3;
 }
 
-.searchbar-container {
-    display: flex;
-    gap: 10px;
+.searchbar-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
     border: 1px solid black;
     padding-top: 20px;
     padding-left: 40px;
+}
+
+.searchbar-container {
+    display: flex;
+    gap: 10px;
+}
+
+.icons-topright-container {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-self: end;
+    padding-right: 50px;
+}
+
+.bellimg {
+    height: 20px;
+}
+
+.username {
+    font-size: 20px;
+    font-weight: bold;
 }
 
 .sidebar {
