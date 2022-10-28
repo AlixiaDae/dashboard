@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: aquamarine;
+    height: 100vh;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 2fr 5fr;
+    grid-template-rows: 1fr 3fr;
+}
+
+.searchimg {
+    height: 20px;
+    align-self: center;
+}
+
+.header {
+    background-color: white;
+    grid-column: 2 / 3;
+}
+
+.searchbar-container {
+    display: flex;
+    gap: 10px;
+    border: 1px solid black;
+    padding-top: 20px;
+    padding-left: 40px;
+}
+
+.sidebar {
+    grid-row: 1 / 2;
+}
+
+#searchbar {
+    border-radius: 15px;
+    border-style: none;
+    height: 30px;
+    width: 600px;
+    background-color: rgb(221, 225, 230);
+}
