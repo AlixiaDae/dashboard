@@ -1,6 +1,7 @@
 :root {
     --body-color: linear-gradient(pink,rgb(194, 126, 194));
-    --sidebar-color: #C783A8;
+    --sidebar-color: #DFADC3;
+    --header-color : #FAD0D7;
 }
 
 * {
@@ -8,10 +9,11 @@
 }
 
 body {
-    height: 100vh;
     margin: 0;
-    padding: 35px;
+    padding: 50px 100px;
+    height: 100vh;
     background-image: var(--body-color);
+    box-sizing: border-box;
 }
 
 .main-container {
@@ -26,28 +28,51 @@ body {
 .header {
     background-color: pink;
     grid-area: 2/2/1/2;
-    height: 100px;
+    height: 150px;
+    background-color: var(--header-color);
 }
+
+/*Sidebar*/
 
 .sidebar {
     display: flex;
     flex-direction: column;
     background-color: var(--sidebar-color);
     grid-area: 1/1/3/2;
-    padding: 10px 25px 40px 25px;
+    padding: 40px 30px 40px 30px;
     color: whitesmoke;
+    width: 250px;
+    gap: 25px;
 }
 
-.sidebar > div {
-    margin-top: 10px;
+img {
+    height: 60px;
+}
 
+.logo-dashboard {
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.sidebar-content-container {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.sidebar-content {
+    margin-top: 5px;
+    margin-left: 15px;
     font-size: 20px;
     font-weight: bold;
-    letter-spacing: 0.5px;
+    letter-spacing: 0.7px;
 }
+
+/*Main Content*/
 
 .main-content {
     background-color: plum;
-    grid-area: 2/2/2/-1;
-    height: 200px;
+    grid-area: 2/2/2/2;
 }
