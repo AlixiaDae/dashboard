@@ -1,7 +1,8 @@
 :root {
-    --body-color: linear-gradient(pink,rgb(194, 126, 194));
-    --sidebar-color: #DFADC3;
-    --header-color : #FAD0D7;
+    --body-color: linear-gradient(#FADCD9,#F79489);
+    --sidebar-color: #F79489;
+    --header-color : white;
+    --main-color: #F9F1F0;
 }
 
 * {
@@ -10,26 +11,52 @@
 
 body {
     margin: 0;
-    padding: 50px 100px;
     height: 100vh;
     background-image: var(--body-color);
     box-sizing: border-box;
+    padding: 10px;
 }
 
 .main-container {
     display: grid;
     grid-template: auto 3fr / auto 3fr;
-    border-radius: 15px;
+    border-radius: 25px;
     overflow: hidden;
-    box-shadow: 2px 2px 3px;
-    height: 90vh;
+    box-shadow: 1px 1px 2px;
+    height: 98vh;
 }
 
+/*Header*/
+
 .header {
-    background-color: pink;
+    display: grid;
+    grid-template: 1fr 1fr / 2fr 1fr;
     grid-area: 2/2/1/2;
     height: 150px;
     background-color: var(--header-color);
+    align-items: center;
+    box-shadow: -1px -1px 5px rgb(182, 182, 182) inset;
+}
+
+.search-container {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 40px 1fr;
+    margin-left: 50px;
+}
+
+.search-icon {
+    height: 20px;
+}
+
+.searchbar {
+    grid-area: 1/2;
+    width: 600px;
+    height: 25px;
+    border-style: none;
+    border-radius: 17px;
+    background-color: rgb(241, 233, 233);
+    box-shadow: 1px 1px 3px rgb(124, 124, 124);
 }
 
 /*Sidebar*/
@@ -73,6 +100,17 @@ img {
 /*Main Content*/
 
 .main-content {
-    background-color: plum;
+    background-color: var(--main-color);
     grid-area: 2/2/2/2;
+    box-shadow: -1px -1px 4px inset;
+}
+
+
+
+
+
+.credits {
+    position: absolute;
+    bottom: 12px;
+    left: 40px;
 }
