@@ -59,6 +59,30 @@ body {
     box-shadow: 1px 1px 3px rgb(124, 124, 124);
 }
 
+.topright-icons {
+    display: flex;
+    gap: 16px;
+    grid-area: 1/2;
+    justify-self: end;
+    padding-right: 65px;
+    align-items: center;
+}
+
+.bell-icon {
+    height: 20px;
+}
+
+.user-icon {
+    height: 35px;
+    border-radius: 20px;
+}
+
+.username {
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 0.2px;
+}
+
 /*Sidebar*/
 
 .sidebar {
