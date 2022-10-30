@@ -198,18 +198,21 @@ img {
     font-weight: bold;
 }
 
-.calculator-container {
+.calculator-container, 
+.signup-container {
     display: flex;
     flex-direction: column;
-    grid-area: 2/1;
     gap: 10px;
-    height: 250px;
-    width: 200px;
     justify-self: center;
     text-align: center;
 }
 
-.calculator {
+.calculator-container {
+    grid-area: 2/1;
+}
+
+.calculator, 
+.signup {
     height: 250px;
     width: 200px;
     border-radius: 15px;
@@ -217,14 +220,20 @@ img {
 }
 
 .calculator-label {
-    grid-area: 2/1;
     text-decoration: none;
     color: black;
     font-size: 18px;
 }
 
+.signup-container {
+    grid-area: 2/2/2/2;
+}
 
-
+.signup-label {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+}
 
 
 .credits {
