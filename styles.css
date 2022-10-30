@@ -199,7 +199,8 @@ img {
 }
 
 .calculator-container, 
-.signup-container {
+.signup-container,
+.etch-a-sketch-container {
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -211,29 +212,31 @@ img {
     grid-area: 2/1;
 }
 
+.signup-container {
+    grid-area: 2/2/2/2;
+}
+
+.etch-a-sketch-container {
+    grid-area: 2/3;
+}
+
+.calculator-label,
+.signup-label,
+.etch-label {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+}
+
 .calculator, 
-.signup {
+.signup,
+.etch {
     height: 250px;
     width: 200px;
     border-radius: 15px;
     box-shadow: 2px 2px 3px rgb(183, 205, 212);
 }
 
-.calculator-label {
-    text-decoration: none;
-    color: black;
-    font-size: 18px;
-}
-
-.signup-container {
-    grid-area: 2/2/2/2;
-}
-
-.signup-label {
-    text-decoration: none;
-    color: black;
-    font-size: 18px;
-}
 
 
 .credits {
