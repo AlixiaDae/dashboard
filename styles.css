@@ -55,6 +55,7 @@ body {
     border-radius: 17px;
     background-color: rgb(241, 233, 233);
     box-shadow: 1px 1px 3px rgb(124, 124, 124) inset;
+    padding-left: 10px;
 }
 
 .topright-icons {
@@ -175,9 +176,51 @@ img {
 /*Main Content*/
 
 .main-content {
+    display: grid;
+    grid-template: 1fr 1fr / 2fr 1fr;
     background-color: var(--main-color);
     grid-area: 2/2/2/2;
     box-shadow: 3px 0px 3px rgb(182, 182, 182) inset;
+}
+
+.project-container {
+    display: grid;
+    grid-area: 1/1/4/1;
+    grid-template: 20px 1fr 1fr 1fr / 1fr 1fr 1fr;
+    margin-left: 30px;
+    padding-top: 20px;
+    padding-left: 25px;
+    row-gap: 20px;
+}
+
+.project-container:first-child {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.calculator-container {
+    display: flex;
+    flex-direction: column;
+    grid-area: 2/1;
+    gap: 10px;
+    height: 250px;
+    width: 200px;
+    justify-self: center;
+    text-align: center;
+}
+
+.calculator {
+    height: 250px;
+    width: 200px;
+    border-radius: 15px;
+    box-shadow: 2px 2px 3px rgb(183, 205, 212);
+}
+
+.calculator-label {
+    grid-area: 2/1;
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
 }
 
 
