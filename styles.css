@@ -184,15 +184,19 @@ button {
     padding: 20px;
 }
 
+/*Projects*/
+
 .project-container {
     display: grid;
     grid-template: 40px 1fr 1fr / 1fr 1fr 1fr; 
     column-gap: 10px;
     row-gap: 10px;
+    align-items: center;
 }
 
-.project-header {
-    font-size: 25px;
+.project-container-header {
+    font-size: 20px;
+    font-weight: bold;
     grid-area: 1/1;
 }
 
@@ -230,6 +234,47 @@ button {
 .etch-label {
     text-decoration: none;
     color: black;
+}
+
+/*Announcements*/
+
+.announcement-container {
+    display: grid;
+    grid-template-rows: 40px 250px;
+    grid-area: 1/2;
+    align-items: center;
+    justify-content: center;
+    row-gap: 15px;
+}
+
+.announcement-container-header {
+    font-size: 20px;
+    font-weight: bold;
+    grid-area: 1/1;
+}
+
+.announcements {
+    display: flex;
+    flex-direction: column;
+    height: 230px;
+    width: 240px;
+    grid-area: 2;
+    background-color: white;
+    border-radius: 20px;
+    padding: 15px;
+    font-size: 15px;
+    gap: 15px;
+}
+
+.content-announcement-container {
+    display: flex;
+    gap: 5px;
+    flex-direction: column;
+    text-align: center;
+}
+
+.line {
+    border: 1px solid grey;
 }
 
 /*Pseudo-class*/
