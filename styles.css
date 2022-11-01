@@ -3,6 +3,7 @@
     --sidebar-color: #F79489;
     --header-color : white;
     --main-color: #F9F1F0;;
+    --label-color: #cf7c73;
 }
 
 * {
@@ -136,20 +137,113 @@ button {
 /*Sidebar*/
 
 .sidebar {
+    display: flex;
+    flex-direction: column;
     grid-area: 1/1/3/1;
     background-color: var(--sidebar-color);
+    padding: 30px;
+    gap: 30px;
+}
+
+.sidebar-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.sidebar > div {
+    font-size: 25px;
+    color: whitesmoke;
+    font-weight: bold;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.logo-container > div {
+    font-size: 35px;
+    color: whitesmoke;
+}
+
+.logo {
+    height: 70px;
 }
 
 /*Main*/
 
 .main-content {
+    display: grid;
+    grid-template: 1fr 1fr / min(70%) 1fr;
     grid-area: 2/2;
     background-color: var(--main-color);
+    padding: 20px;
 }
 
+.project-container {
+    display: grid;
+    grid-template: 40px 1fr 1fr / 1fr 1fr 1fr; 
+    column-gap: 10px;
+    row-gap: 10px;
+}
+
+.project-header {
+    font-size: 25px;
+    grid-area: 1/1;
+}
+
+.calculator-container,
+.signup-container,
+.etch-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.calculator-container {
+    grid-area: 2/1/3/1;
+}
+
+.signup-container {
+    grid-area: 2/2;
+}
+
+.etch-container {
+    grid-area: 2/3;
+}
+
+.calculator,
+.signup,
+.etch {
+    height: 210px;
+    width: 190px;
+    border-radius: 20px;
+}
+
+.calculator-label,
+.signup-label,
+.etch-label {
+    text-decoration: none;
+    color: black;
+}
 
 /*Pseudo-class*/
 
 .searchbar:focus {
     outline-color: rgb(95, 146, 161);
+}
+
+button:hover {
+    background-color: #cf7c73;
+}
+
+.calculator-label:hover,
+.signup-label:hover,
+.etch-label:hover {
+    color: var(--label-color);
 }
