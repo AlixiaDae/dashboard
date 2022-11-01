@@ -6,4 +6,4 @@ Bell Icon image from <a href="https://www.nicepng.com/downpng/u2e6t4i1i1w7r5i1_a
 
 User Icon image and art by [Alixia Dae]
 
-Logo image from <a href="https://www.flaticon.com/free-icons/tinder" title="tinder icons">Tinder icons created by Freepik - Flaticon</a>
+<a href="https://www.flaticon.com/free-icons/tinder" title="tinder icons">Tinder icons created by Freepik - Flaticon</a>
