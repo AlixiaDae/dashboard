@@ -96,7 +96,7 @@ body {
 .userbar-container {
     display: grid;
     grid-template: 30px 1fr / 90px minmax(500px,700px);
-    align-item: center;
+    align-items: center;
 }
 
 .usericon-bar {
@@ -289,6 +289,7 @@ button:hover {
 
 .calculator-label:hover,
 .signup-label:hover,
-.etch-label:hover {
+.etch-label:hover,
+.color {
     color: var(--label-color);
 }
